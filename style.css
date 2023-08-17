@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+    width: 600px;
+    height: 600px;
+    background-color: rgb(147, 231, 91);
+}
+
+.snake-head {
+    background-color: green;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.snake-body {
+    border-radius: 50%;
+    background-color: rgb(36, 192, 36);
+}
+
+.food {
+    /* grid-area: 10 / 12; */
+    /* grid-column-start: 12;
+    grid-row-start: 10; */
+
+    background-color: red;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+    .game {
+        width: 300px;
+        height: 300px;
+    }
+}
