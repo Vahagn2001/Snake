@@ -141,6 +141,6 @@ const easyBtn = document.getElementById("easy-btn");
 const mediumBtn = document.getElementById("medium-btn");
 const hardBtn = document.getElementById("hard-btn");
 
-easyBtn.addEventListener("click", () => startSnakeGame("easy", 300));
-mediumBtn.addEventListener("click", () => startSnakeGame("medium", 300));
-hardBtn.addEventListener("click", () => startSnakeGame("hard", 100));
+easyBtn.addEventListener("click", () => startSnakeGame("easy", 250));
+mediumBtn.addEventListener("click", () => startSnakeGame("medium", 200));
+hardBtn.addEventListener("click", () => startSnakeGame("hard", 150));

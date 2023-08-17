@@ -6,9 +6,29 @@ body {
     overflow: hidden;
 }
 
+.mode-section__title {
+    display: flex;
+    color: turquoise;
+    justify-content: center;
+    font-size: xxx-large;
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-family: cursive;
+    text-shadow: 0px 3px 0px rgb(255, 255, 255);
+}
+
+.mode-section__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background: teal;
 }
 
 .game {
@@ -22,32 +42,41 @@ body {
 
     width: 600px;
     height: 600px;
-    background-color: rgb(147, 231, 91);
+    background-color: rgb(0, 59, 59);
 }
 
 .snake-head {
-    background-color: green;
+    background-color: rgb(253, 253, 253);
     z-index: 1;
     border-radius: 50%;
 }
 
+.mode-section__btn {
+    padding: 10px 20px;
+    border: none;
+    color: teal;
+    background-color: white;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.3;
+        color: rgb(0, 0, 0);
+    }
+}
+
 .snake-body {
     border-radius: 50%;
-    background-color: rgb(36, 192, 36);
+    background-color: turquoise;
 }
 
 .food {
-    /* grid-area: 10 / 12; */
-    /* grid-column-start: 12;
-    grid-row-start: 10; */
-
-    background-color: red;
+    background-color: rgb(44, 155, 144);
     border-radius: 50%;
 }
 
 @media only screen and (max-width: 700px) {
     .game {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
 }
