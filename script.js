@@ -132,7 +132,7 @@ const startSnakeGame = (mode, duration) => {
     }
 
     changeFoodPosition();
-    document.body.addEventListener('swiped', (e) => handleMovement({ code: e.detail.dir }));
+    document.addEventListener('swiped', (e) => handleMovement({ code: e.detail.dir }));
     window.addEventListener("keydown", handleMovement);
     const gameInterval = setInterval(gameLogic, duration);
 }
