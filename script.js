@@ -1,4 +1,5 @@
 const modeSelection = document.querySelector(".mode-selection");
+const score = document.querySelector(".score");
 
 const showGameOver = () => {
     alert("Game over!");
